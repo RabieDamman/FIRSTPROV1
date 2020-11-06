@@ -1,0 +1,185 @@
+body
+{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*     styla första div     */
+.all-sidan{
+    position: relative;
+    left: 35%;
+}
+/*     styla andra div som står inre första driv       */
+.background{
+    background-color: aquamarine;
+    max-width: 400px;
+    max-height: 400px;
+    text-align: center;
+    
+}
+/*    styla submit och gör knapp        */
+#submit{
+    text-align: center;
+    margin-bottom:  40px;
+    margin-top: 40px;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.first_name
+{
+    margin: 30px 0px;
+    display: inline-block;
+    /*padding: 10px;*/
+}
+
+.last_name
+{
+    margin: 30px 0px;
+    display: inline-block;
+}
+
+/*     listaa           */
+
+.colors{
+   list-style: none;
+}
+.colors > ol > li:nth-child(1) {
+    
+    color: blue;
+}
+.colors > ol > li:nth-child(2) {
+    color: green;
+
+}
+.colors > ol > li:nth-child(3) {
+    
+    color: yellow;
+}
+.colors > ol > li:nth-child(4) {
+    
+    color: orange;
+}
+.colors > ol > li:nth-child(5) {
+    color: slateblue;
+
+}
+
+
+.ordnad-lista
+{
+    text-align: left;
+    text-decoration: none;
+    margin: 0px;
+    /*float: left;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.countries li 
+{
+    display: inline-block;
+    margin-right: -5px;
+}
+
+.countries ul
+{
+    display: block;
+}
+
+.fisrt-country
+{
+    border: 1px solid black;
+    width: 100px ;
+    background: rgb(233, 121, 40);
+    text-align: center;
+    
+}
+.countries > li
+{
+    border: 2px soli black;
+}
+.sec-country
+{
+    border: 1px solid black;
+    width: 100px ;
+    background: rgb(226, 165, 122);
+    
+    text-align: center;
+    
+}
+.thr-country
+{
+    border: 1px solid black;
+    width: 100px ;
+    background: rgb(233, 121, 40);
+    background: rgb(226, 165, 122);
+    text-align: center;
+    
+}
+.four-country
+{
+    border: 1px solid black;
+    width: 100px ;
+    background: rgb(233, 121, 40);
+    text-align: center;
+    
+}
+.five-country
+{
+    border: 1px solid black;
+    width: 100px ;
+    background: rgb(233, 121, 40);
+    text-align: center;
+    
+}
+
+/*     grafik        */
+.size_background
+{
+    width: 100px;
+    height: 100px;
+    background: teal;
+    transition: ease width 2s, height 2s;
+}
+
+.size_background:hover
+{
+    width: 300px;
+    height: 300px;
+}
+
+
+@keyframes change_size_back
+{
+    from {background-color: red;}
+  to {background-color: yellow;}
+
+}
+
+.size_background_animation
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: change_size_back;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.mov_hidden
+{
+    display: none;
+}
+
+
+.mov_show:hover .mov_hidden
+{
+    display: block;
+}
